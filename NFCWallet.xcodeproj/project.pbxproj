@@ -12,6 +12,14 @@
 		A9DB7F602C96E37A00063667 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB7F5F2C96E37A00063667 /* Item.swift */; };
 		A9DB7F622C96E37D00063667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DB7F612C96E37D00063667 /* Assets.xcassets */; };
 		A9DB7F652C96E37D00063667 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DB7F642C96E37D00063667 /* Preview Assets.xcassets */; };
+		A9DB7F6C2C96E47200063667 /* MnemonicWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB7F6B2C96E47200063667 /* MnemonicWalletView.swift */; };
+		A9DB7F6F2C96E5EE00063667 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = A9DB7F6E2C96E5EE00063667 /* SwiftProtobuf */; };
+		A9DB7F712C96E5EE00063667 /* WalletCore in Frameworks */ = {isa = PBXBuildFile; productRef = A9DB7F702C96E5EE00063667 /* WalletCore */; };
+		A9DB7F742C96E60A00063667 /* SolanaSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9DB7F732C96E60A00063667 /* SolanaSwift */; };
+		A9DB7F762C96EC0C00063667 /* WalletSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB7F752C96EC0C00063667 /* WalletSetupView.swift */; };
+		A9DB7F782C96EC1C00063667 /* WalletDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB7F772C96EC1C00063667 /* WalletDetailsView.swift */; };
+		A9DB7F7A2C96EF5A00063667 /* WalletHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB7F792C96EF5A00063667 /* WalletHomeView.swift */; };
+		A9DB7F7D2C97008800063667 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = A9DB7F7C2C97008800063667 /* BigInt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,10 @@
 		A9DB7F5F2C96E37A00063667 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A9DB7F612C96E37D00063667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DB7F642C96E37D00063667 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9DB7F6B2C96E47200063667 /* MnemonicWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicWalletView.swift; sourceTree = "<group>"; };
+		A9DB7F752C96EC0C00063667 /* WalletSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSetupView.swift; sourceTree = "<group>"; };
+		A9DB7F772C96EC1C00063667 /* WalletDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDetailsView.swift; sourceTree = "<group>"; };
+		A9DB7F792C96EF5A00063667 /* WalletHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DB7F742C96E60A00063667 /* SolanaSwift in Frameworks */,
+				A9DB7F712C96E5EE00063667 /* WalletCore in Frameworks */,
+				A9DB7F6F2C96E5EE00063667 /* SwiftProtobuf in Frameworks */,
+				A9DB7F7D2C97008800063667 /* BigInt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +71,10 @@
 			children = (
 				A9DB7F5B2C96E37A00063667 /* NFCWalletApp.swift */,
 				A9DB7F5D2C96E37A00063667 /* ContentView.swift */,
+				A9DB7F792C96EF5A00063667 /* WalletHomeView.swift */,
+				A9DB7F752C96EC0C00063667 /* WalletSetupView.swift */,
+				A9DB7F772C96EC1C00063667 /* WalletDetailsView.swift */,
+				A9DB7F6B2C96E47200063667 /* MnemonicWalletView.swift */,
 				A9DB7F5F2C96E37A00063667 /* Item.swift */,
 				A9DB7F612C96E37D00063667 /* Assets.xcassets */,
 				A9DB7F632C96E37D00063667 /* Preview Content */,
@@ -86,6 +106,12 @@
 			dependencies = (
 			);
 			name = NFCWallet;
+			packageProductDependencies = (
+				A9DB7F6E2C96E5EE00063667 /* SwiftProtobuf */,
+				A9DB7F702C96E5EE00063667 /* WalletCore */,
+				A9DB7F732C96E60A00063667 /* SolanaSwift */,
+				A9DB7F7C2C97008800063667 /* BigInt */,
+			);
 			productName = NFCWallet;
 			productReference = A9DB7F582C96E37A00063667 /* NFCWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +140,11 @@
 				Base,
 			);
 			mainGroup = A9DB7F4F2C96E37A00063667;
+			packageReferences = (
+				A9DB7F6D2C96E5EE00063667 /* XCRemoteSwiftPackageReference "wallet-core" */,
+				A9DB7F722C96E60A00063667 /* XCRemoteSwiftPackageReference "solana-swift" */,
+				A9DB7F7B2C97008800063667 /* XCRemoteSwiftPackageReference "BigInt" */,
+			);
 			productRefGroup = A9DB7F592C96E37A00063667 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9DB7F5E2C96E37A00063667 /* ContentView.swift in Sources */,
+				A9DB7F762C96EC0C00063667 /* WalletSetupView.swift in Sources */,
+				A9DB7F782C96EC1C00063667 /* WalletDetailsView.swift in Sources */,
+				A9DB7F6C2C96E47200063667 /* MnemonicWalletView.swift in Sources */,
 				A9DB7F602C96E37A00063667 /* Item.swift in Sources */,
 				A9DB7F5C2C96E37A00063667 /* NFCWalletApp.swift in Sources */,
+				A9DB7F7A2C96EF5A00063667 /* WalletHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +383,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9DB7F6D2C96E5EE00063667 /* XCRemoteSwiftPackageReference "wallet-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trustwallet/wallet-core";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.7;
+			};
+		};
+		A9DB7F722C96E60A00063667 /* XCRemoteSwiftPackageReference "solana-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2p-org/solana-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A9DB7F7B2C97008800063667 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9DB7F6E2C96E5EE00063667 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9DB7F6D2C96E5EE00063667 /* XCRemoteSwiftPackageReference "wallet-core" */;
+			productName = SwiftProtobuf;
+		};
+		A9DB7F702C96E5EE00063667 /* WalletCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9DB7F6D2C96E5EE00063667 /* XCRemoteSwiftPackageReference "wallet-core" */;
+			productName = WalletCore;
+		};
+		A9DB7F732C96E60A00063667 /* SolanaSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9DB7F722C96E60A00063667 /* XCRemoteSwiftPackageReference "solana-swift" */;
+			productName = SolanaSwift;
+		};
+		A9DB7F7C2C97008800063667 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9DB7F7B2C97008800063667 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9DB7F502C96E37A00063667 /* Project object */;
 }
